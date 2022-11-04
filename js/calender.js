@@ -4,7 +4,7 @@ function RenderDate(){
 var day = dt.getDay()
 var endDate= new Date(dt.getFullYear(),dt.getMonth()+1,0).getDate()
 
- var  prevDate = new Date(dt.getFullYear(),dt.getMonth(),0).getDate()
+ //var  prevDate = " "/* new Date(dt.getFullYear(),dt.getMonth(),0).getDate() */
  
 var today = new Date()//.getDate()
 var months =[
@@ -17,7 +17,7 @@ document.getElementById("month").innerHTML=months[dt.getMonth()]
 let cells = ""
 
  for(  x = day ; x>0;x--){
-    cells += "<div class='prev_date'>" +(prevDate - x + 1 ) + "</div>"
+    cells += "<div class='prev_date'>"  + "</div>"
 }  
 
 for ( i =1 ; i<=endDate;i++){

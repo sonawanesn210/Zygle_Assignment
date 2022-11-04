@@ -29,15 +29,15 @@ body {
     width: 100%;
     text-align: center;
     align-items: center;
-    background-color: #2ecc71;
-    color: #fff;
+    background-color: #fff;
+    color: black;
     padding: 40px 30px;
 }
 
 .weekdays {
     display: flex;
-    background-color:#27ae60;
-    color: #fff;
+    background-color:#fff;
+    color: black;
     padding: 7px 0;
 }
 .weekdays div {
