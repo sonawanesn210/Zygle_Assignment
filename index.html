@@ -4,23 +4,23 @@
     <title>Calender</title>
     <!-- include calender.css-->
     <link rel="stylesheet" href="css/calender.css">
-    <!-- include calender.js-->
-    <script src="js/calender.js"></script>
+   
 </head>
 
-<body>
+<body onload="RenderDate()">
 
     <div class="wrapper">
         <div class="calender">
             <div class="month">
-                <div class="prev">
+                <div class="prev" onclick="moveDate('prev')">
                     <span>&#10094</span>
                 </div>
+                
                 <div>
-                    <h2>June</h2>
-                    <p> Sat Jun 01 2019</p>
+                    <h2 id="month"></h2>
+                    <p id="date_str"></p>
                 </div>
-                <div class="next">
+                <div class="next" onclick="moveDate('next')">
                     <span>&#10095</span>
                 </div>
             </div>
@@ -33,14 +33,19 @@
                     <div>Fri</div>
                     <div>Sat</div>
                 </div>
-               <div class="days">
+               
+                    
                 
-               </div>
+<div class="days">
+   
+</div>
 
         
     </div>
 
     </div>
+     <!-- include calender.js-->
+     <script src="js/calender.js"></script>
 </body>
 
 </html>
